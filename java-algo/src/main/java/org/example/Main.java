@@ -1,7 +1,6 @@
 package org.example;
 
-import org.example.pg.PG159994;
-import org.example.pg.PG178871;
+import org.example.pg.PG176963;
 
 import java.util.Arrays;
 
@@ -9,14 +8,29 @@ import java.util.Arrays;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        PG178871 pg178871 = new PG178871();
+        PG176963 pg176963 = new PG176963();
 
-        String[] result1 = pg178871.solution(
-                new String[] {"mumu", "soe", "poe", "kai", "mine"},
-                new String[] {"kai", "kai", "mine", "mine"}
+        int[] result1 = pg176963.solution(
+                new String[] {"may", "kein", "kain", "radi"},
+                new int[] {5, 10, 1, 3},
+                new String[][] {
+                        {"may", "kein", "kain", "radi"},
+                        {"may", "kein", "brin", "deny"},
+                        {"kon", "kain", "may", "coni"}
+                }
         );
 
-        System.out.println(result1);
+        int[] result2 = pg176963.solution(
+                new String[] {"may", "kein", "kain", "radi"},
+                new int[] {5, 10, 1, 3},
+                new String[][] {
+                        {"may"},
+                        {"kein", "deny", "may"},
+                        {"kon", "coni"}
+                }
+        );
+
         System.out.println(Arrays.toString(result1));
+        System.out.println(Arrays.toString(result2));
     }
 }
